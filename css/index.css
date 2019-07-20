@@ -271,12 +271,15 @@ footer nav a {
     border-radius: 8px;
     border-color: black;
     margin: 15px auto;
+    transition: transform .7s;
    
 }
 
 .boxes-about button:hover {
     border: 2px solid lightseagreen;
     color: lightseagreen;
+
+    transform: scale(1.2);
 }
 
 .boxes-about button:active {
