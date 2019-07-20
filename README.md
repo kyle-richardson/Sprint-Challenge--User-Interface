@@ -34,13 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+    Semantic HTML is a way to categorize HTML coding in a way that is easy to understand visually as you look at your top-down code structure and nested objects.  For example, instead of enclosing your company address in a <div>, you can be more specific and enclose it in a <address> tag so you and others looking at the html code (including automated systems like SEO) will be able to make sense of it and treat it accordingly.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+display: inline does not deal with height and width properties, and display: block will take up the entire width of the area it is placed in.
+
+display: inline acts like <span> in terms of placement relationship to the previous and next tags, where it will not be on a new line, but attempt to remain on the same row.  display: block acts like <p> in that it designates its own area and forces a new line to place the object there.
+
+
 
 3. What are the 4 areas of the box model?
 
+1) margin
+2) border
+3) padding
+4) content
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+cross axis
+
 5. Explain why git is valuable to a team of developers.
+
+Not only is it an amazing way to organize your own work for the team project, but more importantly, it allows all working on a project or parts that intersect, to test code without too much fear of "messing it all up" and having to debug to get a working program/website again.  It allows collaborators to go back in time to previous iterations of the code, either to review the changes, or to revert them.  This ability is invaluable in an environment where many rely on the code of each other to succeed.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
