@@ -71,6 +71,34 @@ a {
     text-decoration: none;
 }
 
+button {
+
+	border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+h3 {
+    font-size: 1.20rem;
+}
 .container {
     width: 800px;
     margin: 0 auto;
@@ -206,10 +234,6 @@ footer nav a {
 
 /* About page specific classes below*/
 
-hr {
-    border: 1px dashed black;
-}
-
 .jumbo-about {
     margin: 20px 0;
 }
@@ -241,13 +265,22 @@ hr {
     border-bottom: 1px dashed black;
 }
 .boxes-about button {
-    padding: 5px 20px;
+    padding: 8px 23px;
     background-color: white;
-    /* border-radius: 8px; */
-    /* border: 2px; */
+    border: 2px solid black;
+    border-radius: 8px;
     border-color: black;
     margin: 15px auto;
    
+}
+
+.boxes-about button:hover {
+    border: 2px solid lightseagreen;
+    color: lightseagreen;
+}
+
+.boxes-about button:active {
+    background-color: lightgray;
 }
 
 .lower-about .letsWorkTogether {
