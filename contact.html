@@ -23,8 +23,32 @@
               <a href="#">Contact</a>
           </nav>
         </header>
-        <section class="top">
+        <section class="top-contact">
           <img class="contact-top" src="img/banner.jpg" alt="contact top banner">
+        </section>
+        <section class="contact-form">
+            <form action="#">
+            
+                <label for="fname">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="First Last">
+            
+                <label for="lname">Email</label>
+                <input type="text" id="email" name="email" placeholder="test@email.com">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                
+                </select>
+            
+                <label for="subject">How can we help?</label>
+                <textarea id="subject" name="subject" placeholder="Your message here" style="height:100px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+            </form>
         </section>
     </div><!-- container -->        
 </body>
