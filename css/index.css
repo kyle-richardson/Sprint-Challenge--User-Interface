@@ -256,10 +256,7 @@ footer nav a {
 }
 
 .boxes-about div {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start; */
+   
     width: 46%;
     margin: 20px auto;
     border-bottom: 1px dashed black;
@@ -325,10 +322,5 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
-/* .container {
-  border-radius: 5px;
-  background-color: white;
-  padding: 20px;
-} */
+
 
