@@ -66,11 +66,59 @@ p {
     line-height: 1.4;
 }
 
+a {
+
+    text-decoration: none;
+}
+
+button {
+
+	border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+h3 {
+    font-size: 1.20rem;
+}
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 20px 0;
+    width: 95%;
+    
+}
+.jumbo {
+    margin: 20px 0;
+}
+
+header nav a {
+    color: black;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -101,15 +149,55 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes div{
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box1 {
+    background: teal;
+}
+
+.box2 {
+    background: gold;
+}
+
+.box3 {
+    background: cadetblue;
+}
+
+.box4 {
+    background: coral;
+}
+
+.box5 {
+    background: crimson;
+}
+
+.box6 {
+    background: forestgreen;
+}
+
+.box7 {
+    background: darkorchid;
+}
+
+.box8 {
+    background: hotpink;
+}
+
+.box9 {
+    background: indigo;
+}
+
+.box10 {
+    background: darkblue;
 }
 
 .bottom-content {
@@ -142,5 +230,105 @@ footer nav {
 
 footer nav a {
     color: white;
-    text-decoration: none;
 }
+
+/* About page specific classes below*/
+
+.jumbo-about {
+    margin: 20px 0;
+}
+
+.top {
+    border-bottom: 1px dashed black;
+}
+.top-about {
+    margin: 0 20px 20px 20px;
+}
+
+.boxes-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.boxes-about img {
+    margin: 10px auto; 
+}
+
+.boxes-about div {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; */
+    width: 46%;
+    margin: 20px auto;
+    border-bottom: 1px dashed black;
+}
+.boxes-about button {
+    padding: 8px 23px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    border-color: black;
+    margin: 15px auto;
+    transition: transform .7s;
+   
+}
+
+.boxes-about button:hover {
+    border: 2px solid lightseagreen;
+    color: lightseagreen;
+
+    transform: scale(1.2);
+}
+
+.boxes-about button:active {
+    background-color: lightgray;
+}
+
+.lower-about .letsWorkTogether {
+    margin: 20px;
+}
+
+/* contact specific css below here */
+
+.contact-top {
+    margin: 20px auto;
+}
+.contact-form {
+    margin: 20px;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 8px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+/* .container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+} */
+
